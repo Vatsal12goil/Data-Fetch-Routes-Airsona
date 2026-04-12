@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // You’ll plug this in later
+}
+
+model AQIStation {
+  id        Int      @id @default(autoincrement())
+  location  String
+  lat       Float
+  lon       Float
+  aqi       Int?
+  pm25      Float?
+  pm10      Float?
+  o3        Float?
+  no2       Float?
+  so2       Float?
+  co        Float?
+  createdAt DateTime @default(now())
+}
+
+
+/// Add your own schema of tables here 
+
+/// Then DO npx-prisma generate to generate the Prisma Client
+/// npx prisma migrate dev --name init to create the database tables
+/// and npx prisma studio to view the data in the browser
+/// You can also use npx prisma db push to sync the schema without migrations 
