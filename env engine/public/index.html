@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airsona Environmental Engine</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <div class="hero">
+        <h1 class="gradient-text">Airsona</h1>
+        <p class="subtitle">Next-gen environmental recommendation scoring engine</p>
+        
+        <form id="search-form" class="search-container glass-card">
+            <input type="text" id="city-input" placeholder="Enter a city (e.g., Tokyo, Mumbai, Paris)..." autocomplete="off" required>
+            <button type="submit" id="search-btn">
+                <span>Analyze Location</span>
+                <div class="loader hidden" id="btn-loader"></div>
+            </button>
+        </form>
+    </div>
+
+    <main class="results-container hidden" id="results-container">
+        <!-- Overview Section -->
+        <section class="overview glass-card">
+            <div class="location-header">
+                <h2 id="res-location">City Name</h2>
+                <span class="badge" id="res-risk">Risk: Moderate</span>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-label">Solar Potential</span>
+                    <strong class="stat-value" id="stat-solar">--</strong>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Wind Potential</span>
+                    <strong class="stat-value" id="stat-wind">--</strong>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Pollution Severity</span>
+                    <strong class="stat-value" id="stat-pollution">--</strong>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Urban Density</span>
+                    <strong class="stat-value" id="stat-density">--</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights Section -->
+        <section class="insights">
+            <h3>Key Insights</h3>
+            <div class="insights-grid" id="insights-grid">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section class="recommendations">
+            <h3>Top Environmental Solutions</h3>
+            <div class="rec-list" id="rec-list">
+                <!-- Injected via JS -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
