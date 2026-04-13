@@ -1,4 +1,4 @@
-1. # Introduction (Detailed – 1 min)
+# 1. Introduction (Detailed – 1 min)
 
 *"Our project is Airsona, a machine learning–powered full-stack web application designed to help users understand and improve the air quality around them. Airsona predicts the Air Quality Index (AQI) of a given area using multiple machine learning models trained on environmental and pollution datasets.
 
@@ -16,7 +16,7 @@ The application is built as a complete end-to-end web solution, integrating the 
 
 
 
-2. # Problem Statement (Detailed – 1 min)
+# 2. Problem Statement (Detailed – 1 min)
 
 *"One of the biggest challenges today is the deteriorating air quality across cities and even semi-urban areas. Poor air quality directly impacts human health, leading to respiratory issues, reduced productivity, and long-term diseases.
 
